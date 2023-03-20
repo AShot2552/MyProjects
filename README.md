@@ -1,1 +1,1 @@
-# MyProjectsa template for an online store of computer equipment and accessories
+Template for an online store of computer equipment and accessories.
