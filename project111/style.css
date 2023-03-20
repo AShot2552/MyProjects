@@ -1,0 +1,439 @@
+
+a{
+  text-decoration: none;
+  color: inherit; 
+}
+
+body{
+  font-family: 'Raleway', 'Arial', 'Helvetica', sans-serif;
+  font-size: 100%;
+  background-color:rgb(89, 158, 161);
+  min-height: 2000px;
+  max-width: 1500px;
+ 
+}
+
+#current_date_time_block2{
+font-size: 1em;
+font-weight: bolder;
+background-color: rgb(89, 158, 161);
+margin-left: 5px;
+margin-bottom: 5px;
+}
+
+/*Поле пошуку основне зверху*/
+*{
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  margin: 28px 10px 40px 50px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid rgb(255, 179, 0);
+  float: left;
+  width: 240px;  /*висота й ширина поля пошуку*/
+  height: 33px;
+  background: #f1f1f1;
+}
+
+form.example button {
+  margin: 28px 10px 40px 0px;
+  float: left;
+  width: 50px;
+  height: 33px;
+  padding: 0px;
+  background: #fda500;
+  color: rgb(14, 0, 0);
+  font-size: 17px;
+  border: 1px solid rgb(252, 165, 5);
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 767px) {
+  .box{
+    display: block;
+    text-align: left;
+    width: 10px 100px 100px 100px;
+    margin: 288px 0px 110px -10px;     /*розміщення поле пошуку в медіа-барі*/
+    padding: 12px;
+    position: absolute;
+    top:0px;
+    /*background-color: #ddb9cd;*/
+    transition: all 0.01s ease;
+    bottom:10px;
+    z-index: 0;
+    }
+
+  .form.example input[type=text] {
+      padding: 0px;
+      font-size: 17px;
+      border: 1px solid rgb(252, 165, 5);
+      float: left;
+      background: #642424;
+      width: 100px !important;  /*висота й ширина поля пошуку в бургері ** НЕМОЖУ ЗМІНИТИ!!!!*/ 
+      height: 33px;
+      margin: 0px;
+    }
+  
+    
+  .form.example button {
+      float: left;
+      width: 100%;
+      padding: 10px;
+      background: #8a9096;
+      color: white;
+      font-size: 17px;
+      border: 1px solid rgb(252, 165, 5);
+      border-left: none;
+      cursor: pointer;
+    }
+    
+  .form.example button:hover {
+      background: #0b7dda;
+    }
+    
+  .form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }  
+}
+
+/* Логотип PC фото */
+.div-a{
+  background-color: rgb(89, 158, 161); 
+  display: flex;
+  margin-left: 0px 0px 0px 0px;
+}
+
+ /* Персональний кабінет */
+.Y1{
+  border-bottom: 1px solid rgb(138, 138, 138);
+  
+}
+
+/* Увійти */
+.Y2{
+  border-bottom: 1px solid rgb(255, 218, 6);
+}
+
+/* Зареєструватись */
+.Y3{
+  border-bottom: 1px solid rgb(255, 218, 6);
+}
+
+/* Підтримати ЗСУ */
+.DONAT{
+  font-size: bold;
+  border-bottom: 1px solid rgb(138, 138, 138);
+}
+
+.div-1{
+  margin: 0px 0px 0px 0px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-right: 0px;
+  color: black;
+  background-color: rgb(193, 196, 142);
+  font-weight:bold;
+}
+
+/*Горизонтальна лінія = розрив*/
+hr{
+  width: 100%;
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+  border: 0; 
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  }
+
+/*ПОКУПЦЯМ*/
+.footer1{
+  display: inline-table;
+  line-height: 8px;
+  list-style-type: none;
+  padding: 0px;
+  margin: 10px 30px 10px 10px;
+  color: black;
+  background-color: rgb(89, 158, 161);
+  font-weight:bold;
+  font-size: 13px; 
+}
+
+/*КОНТАКТИ*/
+.footer2{
+  display: inline-table;
+  line-height: 8px;
+  list-style-type: none;
+  padding: 0px;
+  margin: 10px 30px 10px 10px;
+  color: black;
+  background-color: rgb(89, 158, 161);
+  font-weight:bold;
+  font-size: 13px; 
+}
+/* Додаткова інформація */
+.footer3{
+  display: inline-table;
+  line-height: 8px;
+  list-style-type: none;
+  padding: 0px;
+  margin: 10px 30px 10px 0px;
+  color: black;
+  background-color: rgb(89, 158, 161);
+  font-weight:bold;
+  font-size: 13px; 
+}
+
+/*Кнопка Вверх*/
+#button {   
+  display: inline-block;   
+  background-color: #FF9800;   
+  width: 50px;   
+  height: 50px;   
+  text-align: center;   
+  border-radius: 4px;   
+  margin: 30px;   
+  position: fixed;   
+  bottom: 30px;   
+  right: 30px;   
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; 
+} 
+#button:hover {   
+  cursor: pointer;   
+  background-color: #333; 
+} 
+#button:active {   
+  background-color: #555; 
+} 
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff; 
+} 
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/***********navbar menu**********************/
+header{
+	position: static;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 20;
+	height: 250px;   /*висота зони тексту - від Головна до офіс*/
+	background: rgb(89, 158, 161);
+  display:flex;
+  margin: 0px 0px 0px 10px;
+  padding: 5px 10px 0px 0px;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.container{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.header__nav{
+  position: absolute;
+  left: -40px;
+  display: grid;
+  font-size: bold;
+  
+}
+.header__menu{
+  display: grid;
+	position: relative;
+	z-index: 2;
+  
+}
+
+.header__menu li{
+	list-style:none;
+	margin: 1px 20px 1px 15px;
+	color: #000;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+  font-size: bold;
+  
+}
+.content-wrapper{
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 10px;
+  line-height: 10px;
+  width: 100%;
+}
+
+.menu__item{
+  font-size: bold;
+  background-color: none;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(34, 114, 74);
+}
+
+.menu__item a {
+  float: left;
+  display: block;
+  color: #571d1d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.menu__item a:hover {
+  border-bottom: 3px solid red;
+}
+
+.menu__item a.active {
+  border-bottom: 3px solid red;
+}
+
+.navbar {
+  width: 100%;
+  margin-left: 30px;
+}
+
+/*.navbar a {
+  float: left;
+  text-align: center;
+  padding: 4px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  background-color: rgb(41, 126, 106);
+}
+
+.active {
+  background-color: #04AA6D;
+  border-radius: 5px;
+  margin: 0px 0px 0px 10px;
+}
+*/
+
+/*burger media*/
+
+@media(max-width: 767px){
+.header__nav { 
+	display: block;
+	position: absolute;
+  top: 55px;
+  left: 0;
+  background: rgba(255, 208, 0, 0.295);
+  box-shadow: rgb(255, 255, 255);
+  width: 100%;
+  box-shadow: 0 4px 2px -2px rgba(3, 3, 3, 0.37);
+ 
+  transition: all 0.4s ease;
+	left:-110%;
+}
+.header__menu {
+	display: block;
+}
+.header__nav.open-menu{
+  left:0;
+}
+.header__menu li {
+	margin: 10px 0px 0px 0px;
+  font-size: 14px;
+  font-weight: bold;
+	}
+.menu-burger__header {
+	position: relative;
+  width: 40px;
+  height: 35px;
+  display: block;
+  margin-left: -7px;   /*розміщення кнопки бургера!!!*/
+}
+.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+  height: 3px;
+	width: 100%;
+	position: absolute;
+	background: #fcd604;
+	margin: 0 auto;
+}
+.menu-burger__header span{
+  top: 16px;
+}
+.menu-burger__header:after, .menu-burger__header:before{
+  content: '';
+}
+.menu-burger__header:after{
+  bottom: 5px;
+}
+.menu-burger__header:before{
+  top: 5px;
+}
+.menu-burger__header.open-menu span {
+  opacity:0; 
+  transition: 0.5s; 
+}
+.menu-burger__header.open-menu:before {
+  transform: rotate(38deg);
+  top: 16px;
+  transition: 0.4s;
+}
+.menu-burger__header.open-menu:after {
+	transform: rotate(-38deg);
+  bottom: 16px;
+  transition: 0.4s;
+}
+header {
+  height: 30px;
+}
+.content-wrapper {
+  margin-top: 350px;
+}
+.fixed-pade {
+  overflow: hidden;
+}
+}
+
+/************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
